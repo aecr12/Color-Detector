@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/butonCanliTanima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="22dp"
+        android:height="50dp"
+        android:text="Canlı Tanıma"
+        app:layout_constraintBottom_toTopOf="@+id/butonInternettenSec"
+        app:layout_constraintStart_toStartOf="@+id/butonInternettenSec" />
+
+    <Button
+        android:id="@+id/butonInternettenSec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="19dp"
+        android:height="50dp"
+        android:text="İnternetten Sec"
+        app:layout_constraintBottom_toTopOf="@+id/butonDosyalardanSec"
+        app:layout_constraintStart_toStartOf="@+id/butonDosyalardanSec" />
+
+    <Button
+        android:id="@+id/butonDosyalardanSec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="266dp"
+        android:height="50dp"
+        android:text="Dosyalardan Sec"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/butonRenkPaleti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="14dp"
+        android:height="50dp"
+        android:text="Renk Plaeti"
+        app:layout_constraintStart_toStartOf="@+id/butonFotografCek"
+        app:layout_constraintTop_toBottomOf="@+id/butonFotografCek" />
+
+    <Button
+        android:id="@+id/butonFotografCek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:height="50dp"
+        android:text="Fotograf Cek"
+        app:layout_constraintStart_toStartOf="@+id/butonDosyalardanSec"
+        app:layout_constraintTop_toBottomOf="@+id/butonDosyalardanSec" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+
+            android:theme="?attr/actionBarTheme"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

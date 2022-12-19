@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="258dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/renkAdiTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/tanimaButonu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="77dp"
+        android:text="Resmi Getir"
+        app:layout_constraintBottom_toTopOf="@+id/renkBilgiTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextLink"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editTextLink"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="31dp"
+        android:ems="10"
+        android:hint="Link Giriniz"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/tanimaButonu"
+        app:layout_constraintEnd_toStartOf="@+id/tanimaButonu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tanimaButonu" />
+
+    <TextView
+        android:id="@+id/renkBilgiTextView"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="13dp"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:text="HEX Kodu"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/rgbBilgiTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tanimaButonu" />
+
+    <TextView
+        android:id="@+id/rgbBilgiTextView"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="89dp"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:text="R-G-B Değerleri"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/renkBilgiTextView" />
+
+    <TextView
+        android:id="@+id/renkAdiTextView"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="39dp"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:text="Renk Adı "
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

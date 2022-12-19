@@ -1,0 +1,2 @@
+ninja: Entering directory `C:\Users\Aykut\AndroidStudioProjects\ColorDetector\opencv\.cxx\Debug\1d3m5o1r\x86'
+ninja: no work to do.

@@ -1,0 +1,1 @@
+C:\Users\Aykut\AndroidStudioProjects\ColorDetector\opencv\build\intermediates\cxx\RelWithDebInfo\4p60g5v6\obj\x86

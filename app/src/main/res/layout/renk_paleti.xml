@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <SeekBar
+        android:id="@+id/seekBarR"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="25dp"
+        android:max="255"
+        android:min="0"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPalet" />
+
+    <SeekBar
+        android:id="@+id/seekBarG"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="147dp"
+        android:max="255"
+        android:min="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarB" />
+
+    <SeekBar
+        android:id="@+id/seekBarB"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="30dp"
+        android:max="255"
+        android:min="0"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarR" />
+
+    <ImageView
+        android:id="@+id/imageViewPalet"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="216dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonKaydet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewHexBilgi"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="81dp"
+        android:gravity="center"
+        android:text="HEX"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonKaydet"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPalet"
+        app:layout_constraintVertical_bias="0.995" />
+
+    <Button
+        android:id="@+id/buttonKaydet"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="81dp"
+        android:text="Kaydet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewHexBilgi"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPalet" />
+</androidx.constraintlayout.widget.ConstraintLayout>

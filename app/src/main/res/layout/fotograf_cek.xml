@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewFotografCek"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="108dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/renkBilgiTextView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/buttonFotograf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="241dp"
+        android:text="Fotograf Cek"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFotografCek" />
+
+    <TextView
+        android:id="@+id/renkBilgiTextView5"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="22dp"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:text="HEX Kodu"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/rgbBilgiTextView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFotografCek" />
+
+    <TextView
+        android:id="@+id/rgbBilgiTextView5"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="27dp"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:text="R-G-B Değerleri"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/renkAdiTextView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/renkBilgiTextView5" />
+
+    <TextView
+        android:id="@+id/renkAdiTextView5"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="43dp"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:text="Renk Adı"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgbBilgiTextView5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
