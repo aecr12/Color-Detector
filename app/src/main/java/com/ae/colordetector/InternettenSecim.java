@@ -38,7 +38,6 @@ public class InternettenSecim extends AppCompatActivity {
         TextView renkBilgiTextView = findViewById(R.id.renkBilgiTextView);
         TextView rgbBilgiTextView = findViewById(R.id.rgbBilgiTextView);
         TextView renkAdiTextView = findViewById(R.id.renkAdiTextView);
-
         FirebaseConnection firebaseConnection = new FirebaseConnection();
         firebaseConnection.getThread().start();
 

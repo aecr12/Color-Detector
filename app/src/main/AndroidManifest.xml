@@ -32,25 +32,17 @@
             </intent-filter>
 
         </activity>
-        <activity
-            android:name=".InternettenSecim">
-        </activity>
+        <activity android:name=".InternettenSecim"></activity>
 
-        <activity
-            android:name=".DosyalardanSecim">
-        </activity>
+        <activity android:name=".DosyalardanSecim"></activity>
 
-        <activity
-            android:name=".KameradanSecim">
-        </activity>
+        <activity android:name=".KameradanSecim"></activity>
 
-        <activity
-            android:name=".FotografCek">
-        </activity>
+        <activity android:name=".FotografCek"></activity>
 
-        <activity
-            android:name=".RenkPaleti">
-        </activity>
+        <activity android:name=".RenkPaleti"></activity>
+        <activity android:name=".Kaydedilenler"></activity>
+        <activity android:name=".CanliTanima"></activity>
     </application>
 
 </manifest>

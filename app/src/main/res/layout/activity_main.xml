@@ -13,11 +13,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
-        android:layout_marginBottom="22dp"
+        android:layout_marginBottom="551dp"
         android:height="50dp"
         android:text="Canlı Tanıma"
-        app:layout_constraintBottom_toTopOf="@+id/butonInternettenSec"
-        app:layout_constraintStart_toStartOf="@+id/butonInternettenSec" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/butonInternettenSec"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
 
     <Button
         android:id="@+id/butonInternettenSec"
@@ -39,7 +40,8 @@
         android:text="Dosyalardan Sec"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
 
     <Button
         android:id="@+id/butonRenkPaleti"
@@ -63,26 +65,35 @@
         app:layout_constraintStart_toStartOf="@+id/butonDosyalardanSec"
         app:layout_constraintTop_toBottomOf="@+id/butonDosyalardanSec" />
 
-    <com.google.android.material.appbar.AppBarLayout
+    <!--<android.widget.Toolbar
+        android:id="@+id/my_toolbar"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="287dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintBottom_toTopOf="@+id/butonDosyalardanSec"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:title="Color Detector"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
+    </android.widget.Toolbar>-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="2dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintBottom_toTopOf="@+id/butonCanliTanima"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
-            android:minHeight="?attr/actionBarSize"
-
-            android:theme="?attr/actionBarTheme"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="0dp" />
-
-    </com.google.android.material.appbar.AppBarLayout>
-
+    </androidx.appcompat.widget.Toolbar>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

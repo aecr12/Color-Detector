@@ -6,11 +6,22 @@ import androidx.appcompat.widget.Toolbar;
 import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
+import android.renderscript.ScriptGroup;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
+    Toolbar myToolbar;
+    public Toolbar getMyToolbar(){
+        return myToolbar;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttonDosyalardanSec = findViewById(R.id.butonDosyalardanSec);
         Button butonFotografCek = findViewById(R.id.butonFotografCek);
         Button buttonRenkPaleti = findViewById(R.id.butonRenkPaleti);
-        ActionBar windowDecorActionBar = this.getActionBar();
+
         buttonDosyalardanSec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         buttonCanliTanima.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,KameradanSecim.class);
+                Intent intent = new Intent(MainActivity.this,CanliTanima.class);
                 startActivity(intent);
             }
         });
@@ -50,10 +61,28 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("Color Detector");
-        // setSupportActionBar(findViewById(R.id.toolbar));
-        toolbar.inflateMenu(R.menu.options_menu);
+
+        buttonInternettenSec.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, InternettenSecim.class);
+                startActivity(intent);
+            }
+        });
+
+        myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        myToolbar.setTitle("Color Detector");
+        myToolbar.inflateMenu(R.menu.options_menu);
+
+        myToolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                Intent intent=new Intent(MainActivity.this, Kaydedilenler.class);
+                startActivity(intent);
+                return false;
+            }
+        });
+
     }
 
 }

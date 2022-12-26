@@ -43,6 +43,7 @@ public class FirebaseConnection {
                             HashMap<String,String> colorsHashMap = (HashMap<String, String>) snapshot.child(String.valueOf(i)).getValue();
                             nameList.add(colorsHashMap.get("name"));
                             hexList.add(colorsHashMap.get("hex"));
+
                         }
                     }
                 }
